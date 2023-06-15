@@ -13,7 +13,5 @@ public class Tack3 {
 
         String yearToday = String.format("%tY", dataToday);
         System.out.println("Your age is: " + (Integer.parseInt(yearToday) - yearOfBirth));
-
-
     }
 }

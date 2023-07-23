@@ -13,8 +13,18 @@ public class Tack1 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter");
-        String word = input.nextLine();
-        String sentence = "";
+        String word;
+        String sentense = " ";
+        while (true) {
+            System.out.println("Write a word (for the last one, enter STOP)");
+            word = input.nextLine();
+            sentense += word + " ";
+            if (word.equals("STOP")) {
+                break;
+            }
+
+            System.out.println(sentense);
+        }
 
 
     }
